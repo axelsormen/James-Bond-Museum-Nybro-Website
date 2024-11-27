@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>James Bond Museum Nybro - Shop</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            color: black;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            font-size: 65px;
+            text-shadow: 2px 2px grey;
+        }
+
+        nav {
+            background-color: #8B0000;
+            padding: 1px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 35px;
+        }
+
+        nav ul li a {
+            color: white;
+            background-color: #8B0000;
+            text-decoration: none;
+            font-size: 25px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #92784c;
+        }
+
+        main {
+            padding: 5px;
+            font-size: 17px;
+            padding-bottom: 50px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .article-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px; /* Add padding to the container */
+        }
+
+        .article {
+            width: 48%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 25px;
+            transition: transform 0.3s; /* Add transition for smooth hover effect */
+        }
+
+        .article:hover {
+            transform: translateY(-10px); /* Move the container up slightly on hover */
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .article-info {
+            margin-top: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-size: 17px;
+        }
+
+        .btn:hover {
+            background-color: #92784c;
+        }
+
+
+        footer {
+    background-color: #8B0000; /* Dark red, closer to "bloody" */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 17px;
+}
+
+.socialmedia {
+    display: flex;
+    margin-left: auto; /* Align flags to the right */
+}
+
+.socialmedia img {
+    width: 40px; /* Set width to make flags small */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between flags */
+    margin-right: 7px;
+}
+
+               /* Style the link within the article */
+               .article-link {
+            text-decoration: none;
+            color: inherit; /* Inherit text color */
+        }
+
+        /* Remove default link styles */
+        .article-link:hover,
+        .article-link:focus,
+        .article-link:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .top {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.buttom{
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+}
+
+        .logo-link {
+    margin-right: auto; /* Push the flags to the right */
+}
+
+.flags {
+    display: flex;
+    margin-left: auto; /* Align flags to the right */
+}
+
+.flags img {
+    width: 40px; /* Set width to make flags small */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between flags */
+    margin-right: 7px;
+}
+
+.logo-link img {
+            width: 30%;
+            height: auto;
+            margin-left: 360px;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="index.html" class="logo-link"><img src="https://upload.wikimedia.org/wikipedia/bat-smg/e/e8/007.png" alt="James Bond Museum Logo"></a>
+            <div class="flags">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707–1800%29.svg/1600px-Flag_of_Great_Britain_%281707–1800%29.svg.png" alt="Flag 1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/2560px-Flag_of_Sweden.svg.png" alt="Flag 2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Flag 3">
+        </div>
+    </div>
+            <h1>James Bond Museum Nybro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Tickets</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="practicalinfo.html">Practical Information</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center; font-size: 35px;">Shop</h2>
+        <div class="article-container">
+                <div class="article">
+                    <a href="article1.html" class="article-link">
+                    <img src="https://mmv2api.s3.us-east-2.amazonaws.com/products/images/007cards.jpg" alt="Article 1">
+                    <div class="article-info">
+                        <h3>James Bond Playing Cards</h3>
+                        <p style="color: #92784c;"><strong>130 SEK</strong></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn more-info">More Info</button>
+                    </div>
+                </div>
+            </a>
+
+                <div class="article">
+                    <a href="article2.html" class="article-link">
+                    <img src="https://007store.com/cdn/shop/products/Sean_Connery_generic_STEEL_BLUE_2048x.jpg?v=1711991138" alt="Article 4">
+                    <div class="article-info">
+                        <h3>James Bond T-shirt</h3>
+                        <p style="color: #92784c;"><strong>250 SEK</strong></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn more-info">More Info</button>
+                    </div>
+                </div>
+            </a>
+        
+                <div class="article">
+                    <a href="article3.html" class="article-link">
+                    <img src="https://007store.com/cdn/shop/products/james-bond-007-secret-agent-attache-case-numbered-edition-pre-order-collectibles-eml-167446_1200x.jpg?v=1635704900" alt="Article 3">
+                    <div class="article-info">
+                        <h3>James Bond Secret Agent Attaché Set</h3>
+                        <p style="color: #92784c;"><strong>1200 SEK</strong></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn more-info">More Info</button>
+                    </div>
+                </div>
+            </a>
+
+                <div class="article">
+                    <a href="article4.html" class="article-link">
+                    <img src="https://i.etsystatic.com/27875798/r/il/062a9b/3395013760/il_570xN.3395013760_9kj6.jpg" alt="Article 2">
+                    <div class="article-info">
+                        <h3>James Bond Hoodie</h3>
+                        <p style="color: #92784c;"><strong>650 SEK</strong></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn more-info">More Info</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="buttom">
+        <p style="margin-right: auto; width: 50%; height: auto; margin-left: 360px; vertical-align: middle;">&copy; 2024 James Bond Museum Nybro. All rights reserved.</p>
+        <div class="socialmedia">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+    </div>
+</div>
+    </footer>
+</body>
+</html>

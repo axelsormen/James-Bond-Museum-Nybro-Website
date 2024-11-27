@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>James Bond Museum Nybro - Practical Info</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            color: black;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            font-size: 65px;
+            text-shadow: 2px 2px grey;
+        }
+
+        nav {
+            background-color: #8B0000; /* Dark red, closer to "bloody" */
+            padding: 1px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 35px;
+        }
+        
+        nav ul li a {
+            color: white;
+            background-color: #8B0000; /* Dark red, closer to "bloody" */
+            text-decoration: none;
+            font-size: 25px;
+            transition: color 0.3s; /* Add transition for smooth color change */
+        }
+
+        nav ul li a:hover {
+            color: #92784c; /* Change text color to gold on hover */
+        }
+
+        main {
+            padding: 5px;
+            font-size: 17px;
+            padding-bottom: 50px;
+            max-width: 800px; /* Set max-width for main content */
+            margin: auto; /* Center align the content */
+        }
+
+
+        footer {
+    background-color: #8B0000; /* Dark red, closer to "bloody" */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 17px;
+}
+
+.socialmedia {
+    display: flex;
+    margin-left: auto; /* Align flags to the right */
+}
+
+.socialmedia img {
+    width: 40px; /* Set width to make flags small */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between flags */
+    margin-right: 7px;
+}
+
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+        }
+
+        .boxes label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .boxes input[type="text"],
+        .boxes input[type="email"],
+        .boxes input[type="tel"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select {
+            width: 50%;
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        input[type="date"] {
+            width: 50%;
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        button[type="submit"] {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            transition: background-color 0.3s; /* Add transition for smooth color change */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #92784c; /* Change background color to gold on hover */
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .smallboxWrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px; /* Increase margin bottom to add more space */
+        }
+
+        .boxes {
+            margin-bottom: 20px;
+        }
+
+        .smallboxes {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input[type="number"] {
+            flex: 1; /* Allow the input field to grow and take up remaining space */
+        }
+
+        .review {
+            margin-bottom: 30px;
+        }
+
+
+.star {
+    color: #92784c; /* Color of filled stars */
+}
+        .review-text {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .review-author {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .top {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.buttom{
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+}
+
+        .logo-link {
+    margin-right: auto; /* Push the flags to the right */
+}
+
+.flags {
+    display: flex;
+    margin-left: auto; /* Align flags to the right */
+}
+
+.flags img {
+    width: 40px; /* Set width to make flags small */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between flags */
+    margin-right: 7px;
+}
+
+.logo-link img {
+            width: 30%;
+            height: auto;
+            margin-left: 360px;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="index.html" class="logo-link"><img src="https://upload.wikimedia.org/wikipedia/bat-smg/e/e8/007.png" alt="James Bond Museum Logo"></a>
+            <div class="flags">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707–1800%29.svg/1600px-Flag_of_Great_Britain_%281707–1800%29.svg.png" alt="Flag 1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/2560px-Flag_of_Sweden.svg.png" alt="Flag 2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Flag 3">
+        </div>
+    </div>
+            <h1>James Bond Museum Nybro</h1>     
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Tickets</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="practicalinfo.html">Practical Information</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center; font-size: 35px;">Tickets</h2>
+                <h3>Purchase Tickets</h3>
+                <form name="Booking" action="http:/www.jamesbond.html/form.php" method="get">
+                    <div class="boxes">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="guestname" placeholder="Ola Nordmann" pattern="[A-Å\sa-å]{3,20}" required="">
+                    </div>
+                    <div class="boxes">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="guestemail" placeholder="ola.nordmann@email.no" required="">
+                    </div>
+                    <div class="boxes">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="guestphone" placeholder="+47 48148657" required="">
+                    </div>
+                    <hr>
+                    <div class="smallboxWrapper">
+                        <div class="smallboxes">
+                            <label style="width: 480px;" for="adultTickets">Adult</label><label style="width: 200px; color: #92784c;"  for="adultTickets" style="color: #92784c;">175 SEK</label>
+                            <input type="number" id="adultTickets" name="adultTickets" placeholder="0" min="1" max="7" required="">
+                        </div>
+                    </div>
+                    <div class="smallboxWrapper">
+                        <div class="smallboxes">
+                            <label style="width: 480px;" for="adultTickets">Senior (65 years and older)</label><label style="width: 200px; color: #92784c;" for="adultTickets" style="color: #92784c;">125 SEK</label>
+                            <input type="number" id="adultTickets" name="adultTickets" placeholder="0" min="1" max="7" required="">
+                        </div>
+                    </div>
+                    <div class="smallboxWrapper">
+                        <div class="smallboxes">
+                            <label style="width: 480px;" for="adultTickets">Youth (15-16 years)</label><label style="width: 200px; color: #92784c;"  for="adultTickets" style="color: #92784c;">100 SEK</label>
+                            <input type="number" id="adultTickets" name="adultTickets" placeholder="0" min="1" max="7" required="">
+                        </div>
+                    </div>
+                    <div class="smallboxWrapper">
+                        <div class="smallboxes">
+                            <label style="width: 480px;" for="adultTickets">Student</label><label style="width: 200px; color: #92784c;"  for="adultTickets" style="color: #92784c;">100 SEK</label>
+                            <input type="number" id="adultTickets" name="adultTickets" placeholder="0" min="1" max="7" required="">
+                        </div>
+                    </div>
+                    <div class="smallboxWrapper">
+                        <div class="smallboxes">
+                            <label style="width: 480px;" for="adultTickets">School class</label><label style="width: 200px; color: #92784c;"  for="adultTickets" style="color: #92784c;">100 SEK</label>
+                            <input type="number" id="adultTickets" name="adultTickets" placeholder="0" min="1" max="7" required="">
+                        </div>
+                    </div>
+                    <div class="smallboxWrapper">
+                        <div class="smallboxes">
+                            <label style="width: 480px;" for="adultTickets">Child (5 years and younger)</label><label style="width: 200px; color: #2F9F49;"  for="adultTickets" style="color: #92784c;">FREE</label>
+                            <input type="number" id="adultTickets" name="adultTickets" placeholder="0" min="1" max="7" required="">
+                        </div>
+                    </div>
+                    <button type="submit">Confirm purchase</button>
+                </form>
+                    <div class="column reviews-column">
+                        <h3>Customer Reviews</h3>
+                        <div class="review">
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <p class="review-text">"Amazing experience! The museum was fantastic and well-organized. I highly recommend it to any James Bond fan."</p>
+                            <p class="review-author">- John Doe</p>
+                        </div>
+                        <div class="review">
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <p class="review-text">"Absolutely awesome experience! I was blown away by the attention to detail and the immersive atmosphere of the museum."</p>
+                            <p class="review-author">- Emily Thompson</p>
+                        </div>                        
+                    </div>
+                    <div class="review">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="review-text">"Great place to visit, especially for families. My kids loved it!"</p>
+                        <p class="review-author">- Jane Smith</p>
+                    </div>                       
+    </main>
+    <footer>
+        <div class="buttom">
+        <p style="margin-right: auto; width: 50%; height: auto; margin-left: 360px; vertical-align: middle;">&copy; 2024 James Bond Museum Nybro. All rights reserved.</p>
+        <div class="socialmedia">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+    </div>
+</div>
+    </footer>
+</body>
+</html>
